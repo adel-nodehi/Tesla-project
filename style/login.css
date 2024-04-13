@@ -85,6 +85,14 @@
   border-radius: 0.5rem;
 }
 
+.media {
+  width: 80%;
+  height: 60px;
+  margin: 4rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
 .icon-box {
   width: 50px;
   height: 50px;
@@ -132,4 +140,17 @@
 
 .telegram:hover::before {
   transform: translateX(0px);
+}
+
+/* instagram */
+
+.instagram::after {
+  box-shadow: 0px 0px 5px 0px #e716d6 inset;
+}
+.instagram::before {
+  box-shadow: 0px 0px 0px 0px #c4077b inset, 0px 0px 0px 0px #c4077b inset;
+  border-radius: 0;
+}
+.instagram:hover::before {
+  box-shadow: 0px 30px 0px 0px #c4077b inset, 0px -30px 0px 0px #c4077b inset;
 }
