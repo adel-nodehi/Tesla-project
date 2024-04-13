@@ -154,3 +154,16 @@
 .instagram:hover::before {
   box-shadow: 0px 30px 0px 0px #c4077b inset, 0px -30px 0px 0px #c4077b inset;
 }
+
+/* youtube-play */
+
+.youtube-play::after {
+  box-shadow: 0px 0px 5px 0px #f43605 inset;
+}
+.youtube-play::before {
+  background-color: #ff0404;
+  box-shadow: 0px 0px 0px 30px #0d1314 inset;
+}
+.youtube-play:hover::before {
+  box-shadow: 0px 0px 0px 1px #0d1314 inset;
+}
