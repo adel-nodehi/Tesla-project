@@ -52,3 +52,35 @@
   border-color: #b3b3b3;
   border-radius: 0.5rem;
 }
+.btn {
+  width: 27rem;
+  height: 3.5rem;
+  margin-left: 4rem;
+  margin-top: 2.5rem;
+  background-color: #9b98d4;
+  color: #fff;
+  border-style: none;
+  border-radius: 0.5rem;
+}
+
+.signing {
+  width: 13rem;
+  border-bottom: 2px solid #636363;
+  margin-top: 2rem;
+  margin-left: 11rem;
+}
+.link {
+  font-size: 1.3rem;
+  color: #636363;
+  text-decoration: none;
+}
+.create {
+  width: 27rem;
+  height: 3.5rem;
+  margin-left: 4rem;
+  margin-top: 2.5rem;
+  background-color: #e4e4e4;
+  color: #878686;
+  border-style: none;
+  border-radius: 0.5rem;
+}
