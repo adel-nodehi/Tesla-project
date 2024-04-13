@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #ffffff;
+  height: 100vh;
+}
+
+.info {
+  width: 150rem;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+.text-1 {
+  width: 8rem;
+  font-size: 2rem;
+}
+.logo {
+  width: 8rem;
+  font-size: 1.5rem;
+}
