@@ -86,18 +86,22 @@ openShopMenu.addEventListener("mouseover", openMenu(menuShop, openShopMenu));
 
 // Close Mega Menu
 const closeMenu = function () {
-  megaMenus.forEach((mMenu) => mMenu.classList.remove("mega_visible"));
-  magaMenuBack.classList.remove("mega-menu__back-visible");
+  megaMenus.forEach((menu) => {
+    if (menu.classList.contains("mega_visible")) {
+      megaMenus.forEach((mMenu) => mMenu.classList.remove("mega_visible"));
+      magaMenuBack.classList.remove("mega-menu__back-visible");
 
-  menuLabels.forEach((label) => label.classList.remove("hover-effect"));
+      menuLabels.forEach((label) => label.classList.remove("hover-effect"));
 
-  headerTop.style.color = "#fff";
+      headerTop.style.color = "#fff";
 
-  document.body.classList.remove("stop-scrolling");
+      document.body.classList.remove("stop-scrolling");
 
-  header.style.paddingRight = `${
-    Number.parseFloat(getComputedStyle(header).paddingRight) - scrollWidth
-  }px`;
+      header.style.paddingRight = `${
+        Number.parseFloat(getComputedStyle(header).paddingRight) - scrollWidth
+      }px`;
+    }
+  });
 };
 
 magaMenuBack.addEventListener("mouseover", closeMenu);
