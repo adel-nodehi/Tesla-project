@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins;
+}
+.container {
+  background-color: #ffffff;
+  height: 100vh;
+}
+
+.info {
+  width: 150rem;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+.text-1 {
+  width: 8rem;
+  font-size: 2rem;
+}
+.logo {
+  width: 8rem;
+  font-size: 1.5rem;
+}
+.login {
+  width: 35rem;
+  height: 60rem;
+  margin: auto;
+}
+
+.sing {
+  font-size: 3rem;
+  margin-left: 4rem;
+}
+
+.email-tesla {
+  margin-top: 3rem;
+  margin-left: 4rem;
+}
+.email {
+  display: flex;
+  width: 8rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  color: #636363;
+}
+.mail {
+  width: 27rem;
+  height: 3.5rem;
+  background-color: #d6d6d6;
+  border-color: #b3b3b3;
+  border-radius: 0.5rem;
+}
+.btn {
+  width: 27rem;
+  height: 3.5rem;
+  margin-left: 4rem;
+  margin-top: 2.5rem;
+  background-color: #9b98d4;
+  color: #fff;
+  border-style: none;
+  border-radius: 0.5rem;
+}
+
+.signing {
+  width: 13rem;
+  border-bottom: 2px solid #636363;
+  margin-top: 2rem;
+  margin-left: 11rem;
+}
+.link {
+  font-size: 1.3rem;
+  color: #636363;
+  text-decoration: none;
+}
+.create {
+  width: 27rem;
+  height: 3.5rem;
+  margin-left: 4rem;
+  margin-top: 2.5rem;
+  background-color: #e4e4e4;
+  color: #878686;
+  border-style: none;
+  border-radius: 0.5rem;
+}
+
+.media {
+  width: 80%;
+  height: 60px;
+  margin: 4rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.icon-box {
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-box .fa {
+  color: #000000;
+  font-size: 30px;
+  line-height: 50px;
+  position: relative;
+  transition: all 0.4s;
+}
+
+.icon-box:hover .fa {
+  transform: scale(1.1);
+}
+
+.icon-box::before,
+.icon-box::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  transition: all 0.6s;
+}
+
+/* telegram */
+
+.telegram::after {
+  box-shadow: 0px 0px 5px 0px #4db7e4 inset;
+}
+
+.telegram::before {
+  box-shadow: 0px 0px 0px 30px #0b71af inset;
+  transform: translateX(50px);
+}
+
+.telegram:hover::before {
+  transform: translateX(0px);
+}
+
+/* instagram */
+
+.instagram::after {
+  box-shadow: 0px 0px 5px 0px #e716d6 inset;
+}
+.instagram::before {
+  box-shadow: 0px 0px 0px 0px #c4077b inset, 0px 0px 0px 0px #c4077b inset;
+  border-radius: 0;
+}
+.instagram:hover::before {
+  box-shadow: 0px 30px 0px 0px #c4077b inset, 0px -30px 0px 0px #c4077b inset;
+}
+
+/* youtube-play */
+
+.youtube-play::after {
+  box-shadow: 0px 0px 5px 0px #f43605 inset;
+}
+.youtube-play::before {
+  background-color: #ff0404;
+  box-shadow: 0px 0px 0px 30px #ffffff inset;
+}
+.youtube-play:hover::before {
+  box-shadow: 0px 0px 0px 1px #ffffff inset;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 25rem;
+  margin-top: 18rem;
+  margin-left: 4rem;
+}
