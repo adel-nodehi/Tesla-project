@@ -1,13 +1,16 @@
 .container {
   background-color: #ffffff;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .info {
-  width: 150rem;
-  height: 10rem;
+  height: 7vh;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-left: 2rem;
   padding: 1rem;
 }
@@ -20,8 +23,7 @@
 }
 .login {
   width: 35rem;
-  height: 60rem;
-  margin: auto;
+  margin: 0 auto 0 auto;
 }
 
 .sing {
@@ -53,10 +55,14 @@
   height: 3.5rem;
   margin-left: 4rem;
   margin-top: 2.5rem;
-  background-color: #9b98d4;
+  background-color: rgba(95, 95, 222, 0.5);
   color: #fff;
   border-style: none;
   border-radius: 0.5rem;
+}
+.btn:hover {
+  background-color: rgba(95, 95, 222, 1);
+  box-shadow: 0 0 5px #454444;
 }
 
 .signing {
@@ -168,5 +174,5 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 25rem;
-  margin: auto;
+  margin: 0 auto 1.5rem auto;
 }
