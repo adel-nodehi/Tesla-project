@@ -235,3 +235,10 @@ footer {
   overflow-y: auto; 
   padding-right: 10px; 
 }
+.language-sidebar {
+  display: none;
+}
+
+.language-sidebar.show {
+  display: block;
+}
