@@ -176,3 +176,62 @@ footer {
   width: 25rem;
   margin: 0 auto 1.5rem auto;
 }
+.language-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.language-sidebar .region {
+  margin-bottom: 10px;
+}
+
+.language-sidebar .region-title {
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: #f2f2f2;
+  margin-bottom: 5px;
+}
+
+.language-sidebar .language-list {
+  padding-left: 0; 
+  padding-right: 20px; 
+}
+
+.language-sidebar .language-list li {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+.language-sidebar .language-list a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.language-sidebar .language-list a:hover {
+  background-color: #ddd;
+}
+.language-sidebar{
+  font-size: 2rem; 
+}
+.language-sidebar {
+  position: fixed;
+  top: 50%;
+  right: 0; /* تغییر به سمت راست */
+  transform: translateY(-50%);
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.language-sidebar {
+  max-height: 100vh; 
+  overflow-y: auto;
+}
+
+.language-sidebar .language-list {
+  overflow-y: auto; 
+  padding-right: 10px; 
+}
