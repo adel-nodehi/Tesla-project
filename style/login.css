@@ -219,7 +219,7 @@ footer {
 .language-sidebar {
   position: fixed;
   top: 50%;
-  right: 0; /* تغییر به سمت راست */
+  right: 0; 
   transform: translateY(-50%);
   background-color: #f2f2f2;
   padding: 10px;
