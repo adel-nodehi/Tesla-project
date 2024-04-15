@@ -106,3 +106,16 @@ const closeMenu = function () {
 
 magaMenuBack.addEventListener("mouseover", closeMenu);
 close.forEach((el) => el.addEventListener("mouseover", closeMenu));
+const languageToggle = document.querySelector('.header-icons-btn');
+const languageModule = document.querySelector('.language-module');
+
+languageToggle.addEventListener('click', () => {
+    languageModule.style.display = 'flex';
+    
+});
+
+languageModule.addEventListener('click', (e) => {
+    if (e.target === languageModule) {
+        languageModule.style.display = 'none';
+    }
+});
