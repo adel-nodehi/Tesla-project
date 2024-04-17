@@ -104,18 +104,17 @@ const closeMenu = function () {
   });
 };
 
-magaMenuBack.addEventListener("mouseover", closeMenu);
-close.forEach((el) => el.addEventListener("mouseover", closeMenu));
 const languageToggle = document.querySelector('.header-icons-btn');
 const languageModule = document.querySelector('.language-module');
 
 languageToggle.addEventListener('click', () => {
     languageModule.style.display = 'flex';
-    
 });
 
 languageModule.addEventListener('click', (e) => {
-    if (e.target === languageModule) {
+    const isClickInsideLanguageList = e.target.closest('.language-list');
+    // اگه داخل کادر زبان جایی خالی باشه و کلیک کنید کادر بسته میشه
+    if (!isClickInsideLanguageList) {
         languageModule.style.display = 'none';
     }
 });
