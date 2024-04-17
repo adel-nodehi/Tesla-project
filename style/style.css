@@ -111,8 +111,7 @@ mega menu start
   gap: 1rem;
 }
 
-.mega__list-item {
-}
+.mega__list-item {}
 
 .mega__list-link {
   text-decoration: none;
@@ -159,8 +158,7 @@ mega menu start
   display: flex;
 }
 
-.mega-list {
-}
+.mega-list {}
 
 .mega-title {
   padding: 1rem;
@@ -196,7 +194,7 @@ header start
 */
 .header {
   padding: 0 4.8rem;
-  background-color: cadetblue;
+  position: relative;
 }
 
 .header__top {
@@ -219,6 +217,7 @@ header start
 .header-logo-img {
   width: 12rem;
 }
+
 .header-menu {
   display: flex;
   justify-content: space-between;
@@ -226,6 +225,7 @@ header start
   gap: 4rem;
   color: inherit;
 }
+
 .header-item {
   list-style: none;
   font-size: 1.4rem;
@@ -234,21 +234,25 @@ header start
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
 }
+
 .btn-svg {
   width: 2.4rem;
   height: 2.4rem;
 }
+
 .header-icons-btn {
   background: none;
   border: none;
   color: inherit;
   cursor: pointer;
 }
+
 .header-icons {
   display: flex;
   gap: 2rem;
   align-items: center;
 }
+
 .header-icons-help {
   color: inherit;
 }
@@ -259,7 +263,85 @@ header start
 
 .header__bottom {
   height: 93vh;
-  background-color: cadetblue;
+}
+
+video {
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -100;
+  object-fit: cover;
+}
+
+.header-content {
+  display: flex;
+  height: 93vh;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 14vh;
+}
+
+.changer {
+  position: absolute;
+  top: 50vh;
+}
+.changer .change{
+  background-color: white;
+}
+.ButtonChange:hover{
+  background-color: white;
+}
+.ButtonChange {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #b1aeae;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.comment {}
+
+.TitleInComment {
+  color: white;
+  margin-bottom: 50px;
+  font-size: 35px;
+}
+
+.TitleInCommentSecend {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 50px;
+}
+.TitleInCommentSecend a{
+  color: white;
+}
+
+.btn2 {
+  padding: 15px 35px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+}
+
+.GoToPage {
+  background-color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.video {
+  display: none;
+  /* transition: 0.7; */
 }
 
 /*
@@ -272,8 +354,7 @@ header end
 main start
 
 */
-.main {
-}
+.main {}
 
 .section1 {
   background-image: url(../images/homepage/Homepage-Model-Y.jpeg);
@@ -281,6 +362,7 @@ main start
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .inner-section1 {
   display: flex;
   flex-direction: column;
@@ -290,21 +372,25 @@ main start
 
   text-align: center;
 }
+
 .section1-top {
   text-align: center;
   padding-top: 11rem;
 }
+
 .section1-top-title {
   font-size: 4rem;
   letter-spacing: 0.4rem;
   word-spacing: 1rem;
   font-weight: 500;
 }
+
 .section1-top-price {
   letter-spacing: 0.4rem;
   font-size: 1.9rem;
   font-weight: 500;
 }
+
 .section1-top-credit {
   font-size: 1.5rem;
   font-weight: 300;
@@ -315,17 +401,20 @@ main start
 .main__wrapper {
   margin-bottom: 7rem;
 }
+
 .section1-links a {
   display: flex;
   text-decoration: none;
   font-size: 1.6rem;
 }
+
 .section1-links {
   display: flex;
   align-items: center;
   gap: 3rem;
   margin-bottom: 3rem;
 }
+
 /* .link1 a {
   background-color: #f4f4f4cc;
   padding: 1rem 6rem;
@@ -350,24 +439,30 @@ main start
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .section1-title {
   font-size: 3rem;
 }
+
 .section1-desc a {
   color: #1b1f23;
 }
+
 .x-color {
   color: #ffffff !important;
 }
+
 .x-color a {
   color: #ffffff;
 }
+
 .center {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .section3 {
   background-image: url(../images/homepage/Homepage-Model-X.jpeg);
   background-position: center center;
@@ -392,12 +487,14 @@ main start
   flex-direction: column;
   justify-content: end;
 }
+
 .links a {
   display: flex;
   text-decoration: none;
   font-size: 1.6rem;
   /* color: #ffffff;  */
 }
+
 .links {
   display: flex;
   justify-content: center;
@@ -405,42 +502,50 @@ main start
   gap: 3rem;
   margin: 0 auto 2rem;
 }
+
 .links-1 a {
   background-color: #f4f4f4cc;
   padding: 1rem 6rem;
   border-radius: 0.3rem;
   font-weight: 500;
 }
+
 .links-2 a {
   background-color: #62615f;
   padding: 1rem 6rem;
   border-radius: 0.3rem;
   font-weight: 500;
 }
+
 .section6 {
   background-image: url(../images/homepage/Homepage-SolarPanels.jpeg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .white {
   color: #ffffff;
 }
+
 .white-link {
   color: #ffffff;
   /* word-spacing: 1rem; */
   font-size: 1.7rem;
   font-weight: 300;
 }
+
 .blure {
   backdrop-filter: blur(2rem);
 }
+
 .section7 {
   background-image: url(../images/homepage/Homepage-SolarRoof.jpeg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .section7-desc {
   font-size: 1.8rem;
 }
@@ -451,6 +556,7 @@ main start
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .inner-section8 {
   display: flex;
   flex-direction: column;
@@ -459,24 +565,29 @@ main start
   padding-top: 12rem;
   height: 100%;
 }
+
 .section8-links a {
   display: flex;
   margin-top: -20rem;
 }
+
 .section8-links {
   display: flex;
   align-items: center;
   gap: 3rem;
 }
+
 .section8-title {
   font-size: 4rem;
   letter-spacing: 0.4rem;
   font-weight: 500;
 }
+
 .section8-links a {
   text-decoration: none;
   font-size: 1.6rem;
 }
+
 .section-right-link1 {
   display: flex;
   justify-content: center;
@@ -488,6 +599,7 @@ main start
   color: #1b1f23;
   font-weight: 500;
 }
+
 .section-right-link2 {
   display: flex;
   justify-content: center;
@@ -500,6 +612,7 @@ main start
   color: #ffffff;
   font-weight: 500;
 }
+
 /*
 
 footer start
@@ -511,6 +624,7 @@ footer start
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .inner-footer {
   padding-top: 12rem;
   display: flex;
@@ -519,6 +633,7 @@ footer start
   align-items: center;
   height: 100%;
 }
+
 .footer_menu a {
   text-decoration: none;
   color: #ffffff;
@@ -527,16 +642,19 @@ footer start
   font-weight: 500;
   letter-spacing: 0.1rem;
 }
+
 .footer_menu {
   display: flex;
   align-items: center;
   gap: 2rem;
   padding-bottom: 3rem;
 }
+
 .inner-footer-title {
   font-size: 4rem;
   font-weight: 500;
 }
+
 .inner-footer-link {
   display: flex;
   justify-content: center;
@@ -547,12 +665,14 @@ footer start
   border-radius: 0.3rem;
   color: #1b1f23;
 }
+
 .inner-footer-link {
   font-size: 1.6rem;
   text-decoration: none;
   margin: 0 auto 9rem;
   font-weight: 500;
 }
+
 /*
 
 footer end
