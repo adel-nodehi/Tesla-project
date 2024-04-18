@@ -69,7 +69,7 @@ mega menu start
 }
 
 .mega__product-link::after {
-  content: "";
+  content: '';
   display: inline-block;
   width: 100%;
   height: 1.7rem;
@@ -111,7 +111,8 @@ mega menu start
   gap: 1rem;
 }
 
-.mega__list-item {}
+.mega__list-item {
+}
 
 .mega__list-link {
   text-decoration: none;
@@ -158,7 +159,8 @@ mega menu start
   display: flex;
 }
 
-.mega-list {}
+.mega-list {
+}
 
 .mega-title {
   padding: 1rem;
@@ -263,7 +265,6 @@ header start
 
 .header__bottom {
   height: 93vh;
-
 }
 
 video {
@@ -282,7 +283,6 @@ video {
   flex-direction: column;
   justify-content: flex-end;
   padding-bottom: 14vh;
-
 }
 
 .changer {
@@ -310,10 +310,10 @@ video {
 }
 
 .slide {
-
 }
 
-.comment {}
+.comment {
+}
 
 .TitleInComment {
   color: white;
@@ -363,7 +363,8 @@ header end
 main start
 
 */
-.main {}
+.main {
+}
 
 .section1 {
   background-image: url(../images/homepage/Homepage-Model-Y.jpeg);

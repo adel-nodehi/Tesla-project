@@ -119,7 +119,7 @@
 
 .icon-box::before,
 .icon-box::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -194,8 +194,8 @@ footer {
 }
 
 .language-sidebar .language-list {
-  padding-left: 0; 
-  padding-right: 20px; 
+  padding-left: 0;
+  padding-right: 20px;
 }
 
 .language-sidebar .language-list li {
@@ -213,13 +213,13 @@ footer {
 .language-sidebar .language-list a:hover {
   background-color: #ddd;
 }
-.language-sidebar{
-  font-size: 2rem; 
+.language-sidebar {
+  font-size: 2rem;
 }
 .language-sidebar {
   position: fixed;
   top: 50%;
-  right: 0; 
+  right: 0;
   transform: translateY(-50%);
   background-color: #f2f2f2;
   padding: 10px;
@@ -227,13 +227,13 @@ footer {
   box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 .language-sidebar {
-  max-height: 100vh; 
+  max-height: 100vh;
   overflow-y: auto;
 }
 
 .language-sidebar .language-list {
-  overflow-y: auto; 
-  padding-right: 10px; 
+  overflow-y: auto;
+  padding-right: 10px;
 }
 .language-sidebar {
   display: none;

@@ -1,39 +1,39 @@
 // Selecting elements
 
-const megaMenus = document.querySelectorAll(".mega-menu");
-const menuLabels = document.querySelectorAll(".header-item");
-const headerTop = document.querySelector(".header__top");
-const header = document.querySelector(".header");
+const megaMenus = document.querySelectorAll('.mega-menu');
+const menuLabels = document.querySelectorAll('.header-item');
+const headerTop = document.querySelector('.header__top');
+const header = document.querySelector('.header');
 
 // Open menu
-const openVehiclesMenu = document.querySelector(".header-item1");
-const openEnergyMenu = document.querySelector(".header-item2");
-const openChargingMenu = document.querySelector(".header-item3");
-const openDiscoverMenu = document.querySelector(".header-item4");
-const openShopMenu = document.querySelector(".header-item5");
-const menuVehicles = document.getElementById("mega-menu__vehicles");
-const menuEnergy = document.getElementById("mega-menu__energy");
-const menuCharging = document.getElementById("mega-menu__charging");
-const menuDiscover = document.getElementById("mega-menu__discover");
-const menuShop = document.getElementById("mega-menu__shop");
+const openVehiclesMenu = document.querySelector('.header-item1');
+const openEnergyMenu = document.querySelector('.header-item2');
+const openChargingMenu = document.querySelector('.header-item3');
+const openDiscoverMenu = document.querySelector('.header-item4');
+const openShopMenu = document.querySelector('.header-item5');
+const menuVehicles = document.getElementById('mega-menu__vehicles');
+const menuEnergy = document.getElementById('mega-menu__energy');
+const menuCharging = document.getElementById('mega-menu__charging');
+const menuDiscover = document.getElementById('mega-menu__discover');
+const menuShop = document.getElementById('mega-menu__shop');
 
 // Close
-const magaMenuBack = document.querySelector(".mega-menu__back");
+const magaMenuBack = document.querySelector('.mega-menu__back');
 const close = [
-  ...document.querySelectorAll(".header-icons > *"),
-  document.querySelector(".header-logo"),
+  ...document.querySelectorAll('.header-icons > *'),
+  document.querySelector('.header-logo'),
 ];
 
 const getScrollbarWidth = function () {
   // Creating invisible container
-  const outer = document.createElement("div");
-  outer.style.visibility = "hidden";
-  outer.style.overflow = "scroll"; // forcing scrollbar to appear
-  outer.style.msOverflowStyle = "scrollbar"; // needed for WinJS apps
+  const outer = document.createElement('div');
+  outer.style.visibility = 'hidden';
+  outer.style.overflow = 'scroll'; // forcing scrollbar to appear
+  outer.style.msOverflowStyle = 'scrollbar'; // needed for WinJS apps
   document.body.appendChild(outer);
 
   // Creating inner element and placing it in the container
-  const inner = document.createElement("div");
+  const inner = document.createElement('div');
   outer.appendChild(inner);
 
   // Calculating difference between container's full width and the child width
@@ -51,14 +51,14 @@ const openMenu = function (selectedMenu, openlabel) {
   return function () {
     closeMenu();
 
-    selectedMenu.classList.add("mega_visible");
-    magaMenuBack.classList.add("mega-menu__back-visible");
+    selectedMenu.classList.add('mega_visible');
+    magaMenuBack.classList.add('mega-menu__back-visible');
 
-    openlabel.classList.add("hover-effect");
+    openlabel.classList.add('hover-effect');
 
-    headerTop.style.color = "#171a20";
+    headerTop.style.color = '#171a20';
 
-    document.body.classList.add("stop-scrolling");
+    document.body.classList.add('stop-scrolling');
 
     header.style.paddingRight = `${
       Number.parseFloat(getComputedStyle(header).paddingRight) + scrollWidth
@@ -67,35 +67,35 @@ const openMenu = function (selectedMenu, openlabel) {
 };
 
 openVehiclesMenu.addEventListener(
-  "mouseover",
+  'mouseover',
   openMenu(menuVehicles, openVehiclesMenu)
 );
 openEnergyMenu.addEventListener(
-  "mouseover",
+  'mouseover',
   openMenu(menuEnergy, openEnergyMenu)
 );
 openChargingMenu.addEventListener(
-  "mouseover",
+  'mouseover',
   openMenu(menuCharging, openChargingMenu)
 );
 openDiscoverMenu.addEventListener(
-  "mouseover",
+  'mouseover',
   openMenu(menuDiscover, openDiscoverMenu)
 );
-openShopMenu.addEventListener("mouseover", openMenu(menuShop, openShopMenu));
+openShopMenu.addEventListener('mouseover', openMenu(menuShop, openShopMenu));
 
 // Close Mega Menu
 const closeMenu = function () {
-  megaMenus.forEach((menu) => {
-    if (menu.classList.contains("mega_visible")) {
-      megaMenus.forEach((mMenu) => mMenu.classList.remove("mega_visible"));
-      magaMenuBack.classList.remove("mega-menu__back-visible");
+  megaMenus.forEach(menu => {
+    if (menu.classList.contains('mega_visible')) {
+      megaMenus.forEach(mMenu => mMenu.classList.remove('mega_visible'));
+      magaMenuBack.classList.remove('mega-menu__back-visible');
 
-      menuLabels.forEach((label) => label.classList.remove("hover-effect"));
+      menuLabels.forEach(label => label.classList.remove('hover-effect'));
 
-      headerTop.style.color = "#fff";
+      headerTop.style.color = '#fff';
 
-      document.body.classList.remove("stop-scrolling");
+      document.body.classList.remove('stop-scrolling');
 
       header.style.paddingRight = `${
         Number.parseFloat(getComputedStyle(header).paddingRight) - scrollWidth
@@ -104,17 +104,20 @@ const closeMenu = function () {
   });
 };
 
+magaMenuBack.addEventListener('mouseover', closeMenu);
+close.forEach(el => el.addEventListener('mouseover', closeMenu));
+
 const languageToggle = document.querySelector('.header-icons-btn');
 const languageModule = document.querySelector('.language-module');
 
 languageToggle.addEventListener('click', () => {
-    languageModule.style.display = 'flex';
+  languageModule.style.display = 'flex';
 });
 
-languageModule.addEventListener('click', (e) => {
-    const isClickInsideLanguageList = e.target.closest('.language-list');
-    // اگه داخل کادر زبان جایی خالی باشه و کلیک کنید کادر بسته میشه
-    if (!isClickInsideLanguageList) {
-        languageModule.style.display = 'none';
-    }
+languageModule.addEventListener('click', e => {
+  const isClickInsideLanguageList = e.target.closest('.language-list');
+  // اگه داخل کادر زبان جایی خالی باشه و کلیک کنید کادر بسته میشه
+  if (!isClickInsideLanguageList) {
+    languageModule.style.display = 'none';
+  }
 });
