@@ -230,6 +230,7 @@ header start
   list-style: none;
   font-size: 1.4rem;
 
+  cursor: pointer;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
 }
@@ -243,6 +244,7 @@ header start
   background: none;
   border: none;
   color: inherit;
+  cursor: pointer;
 }
 
 .header-icons {
