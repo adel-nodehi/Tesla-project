@@ -21,3 +21,26 @@ function OpenSlide(evt, SlideName,Explanation) {
 
     evt.currentTarget.className += " change";
   }
+let index = 0;
+let transitionDelay = 8000;
+
+let slideContainer = document.querySelector(".header__bottom");
+let slides = slideContainer.querySelectorAll(".slide");
+
+for (let slide of slides) {
+  slide.style.transition = `all ${transitionDelay/1000}s linear`;
+}
+
+showSlide(index);
+
+function showSlide(slideNumber) {
+  slides.forEach((slide, i) => {
+    slide.style.display = i == slideNumber ? "block" : "none";
+  });
+  index++;
+  if (index >= slides.length) {
+    index = 0;
+  }
+}
+
+setInterval (() => showSlide(index), transitionDelay);
